@@ -32,8 +32,9 @@ export default class App extends Component<{}> {
         <View style={styles.centerView}>
           <Image
               style={styles.icon}
-              source={require('./images/big_logo.png')}
+              source={require('./images/header_logo.png')}
           />
+          <Text style={{color:'#05a5d1',fontSize:20}}>React Native</Text>
         </View>
         <View style={styles.inputView}>
           <TextInput multiline = {true} placeholder ="用户名" />
@@ -71,6 +72,7 @@ const styles = StyleSheet.create({
     width:100
   },
   icon:{
+    tintColor:'#05a5d1'
     //width:200
   },
   container: {
